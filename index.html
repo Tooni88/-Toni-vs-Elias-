@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yatzy Summer Battle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+  <h1>☀️ Yatzy Summer Battle</h1>
+
+  <div class="players">
+    <div class="player">👤 Toni</div>
+    <div class="vs">VS</div>
+    <div class="player">👤 Elias</div>
+  </div>
+
+  <button onclick="toggleMusic()">🎵 Summer Vibes</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Toni</th>
+        <th>Elias</th>
+      </tr>
+    </thead>
+
+    <tbody id="scoreTable"></tbody>
+
+    <tfoot>
+      <tr>
+        <td>Total</td>
+        <td id="totalToni">0</td>
+        <td id="totalElias">0</td>
+      </tr>
+
+      <tr>
+        <td>🔥 Win Streak</td>
+        <td id="streakToni">0</td>
+        <td id="streakElias">0</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <button onclick="resetGame()">🔄 New Game</button>
+</div>
+
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<script src="app.js"></script>
+</body>
+</html>
